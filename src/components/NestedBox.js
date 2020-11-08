@@ -1,6 +1,8 @@
-import React, { useReducer } from "react"
+import React, { useContext } from "react"
+import CountContext from "../components/CountContext"
 
-export default function NestedBox({ children }) {
+export default function NestedBox({ children, final }) {
+  const context = useContext(CountContext)
   return (
     <div
       style={{
@@ -11,7 +13,7 @@ export default function NestedBox({ children }) {
         height: "50%",
       }}
     >
-      {children}
+      {final ? <p>{context.value}</p> : children}
     </div>
   )
 }

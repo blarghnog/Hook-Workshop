@@ -1,12 +1,11 @@
-import React, { useState, useReducer } from "react"
+import React from "react"
 import Layout from "../components/Layout"
 import Counter from "../components/Counter"
 
 export default function useReducerPage() {
-  const [count, setCount] = useState(0)
   return (
     <Layout>
-      <h1>UseReducer Demonstration 1</h1>
+      <h1>UseReducer Demonstration</h1>
       <p>Code breakdown: /src/components/Counter.js</p>
       <ul>
         <li>

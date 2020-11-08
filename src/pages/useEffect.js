@@ -9,6 +9,9 @@ export default function useEffectPage() {
     switch (e.target.id) {
       case "demonstration1":
         setShowDem1(true)
+        break
+      default:
+        break
     }
   }
 
